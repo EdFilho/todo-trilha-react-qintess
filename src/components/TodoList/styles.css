@@ -1,0 +1,35 @@
+.todo-list-container {
+  background: #eee;
+  color: #888;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  height: 100vh;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.todo-list-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px;
+}
+
+.todo-list-item span {
+  font-size: 1.5rem;
+}
+
+.todo-list-item-actions {
+  display: flex;
+}
+
+.todo-list-item-actions button {
+  margin-left: 10px;
+}
