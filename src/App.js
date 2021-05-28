@@ -5,11 +5,7 @@ import Todo from './components/Todo';
 import React, { useState } from 'react';
 
 function App() {
-  var [currentTodo, setCurrentTodo] = useState({
-    id: null,
-    text: '',
-    items: []
-  });
+  var [currentTodo, setCurrentTodo] = useState();
   var [todos, setTodos] = useState([{
     id: 0,
     text: 'Mercado',
@@ -92,7 +88,7 @@ function App() {
 
   return (
     <div className="App">
-      <TodoList todos={todos} removeTodo={removeTodo} onClick={setCurrentTodo} createTodo={createTodo} editTodo={editTodo} />
+      <TodoList todos={todos} removeTodo={removeTodo} setCurrentTodo={setCurrentTodo} createTodo={createTodo} editTodo={editTodo} />
       <Todo currentTodo={currentTodo} createItem={createItem} checkItem={checkItem} />
     </div>
   );

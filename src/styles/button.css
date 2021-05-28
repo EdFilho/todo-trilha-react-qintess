@@ -12,6 +12,10 @@ button.green {
   background: green;
 }
 
+button.yellow {
+  background: blueviolet;
+}
+
 button.blue {
   background: blue;
 }
